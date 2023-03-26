@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background: #222;
+  font-family: "Open Sans", sans-serif;
+  background-image: url(./img/takashi-miyazaki-4VELvD-vdVg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body::before {
+  background: linear-gradient(#e91e63, #ff44f5);
+  clip-path: circle(20% at 30% 40%);
+}
+.panel {
+  border: 2px solid white;
+  background: #eaeaea;
+  padding: 4rem;
+  border-radius: 3.5rem;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  opacity: 0.6;
+  box-shadow: 25px 50px 150px;
+  transition: 2s;
+}
+.panel:hover {
+  cursor: pointer;
+  animation: perspective 1s;
+}
+
+.list-group-item {
+  list-style: none;
+  /* text-align: center; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 5rem;
+  text-transform: uppercase;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  outline: none;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 20px;
+  background: #7c7c7c;
+  color: rgb(32, 29, 29);
+  font-family: inherit;
+  font-size: 80%;
+  /* font-style: oblique; */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  /* border: 2px solid red; */
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: rgb(75, 78, 75);
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.fa-solid {
+  font-size: 1.5rem;
+}
+
+#box {
+  font-size: 50px;
+  color: red;
+}
+
+.card-title {
+  color: red;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#name {
+  font-style: inherit;
+  color: red;
+}
+
+#feels {
+  color: black;
+  font-style: inherit;
+  font-weight: bold;
+}
+
+#desc {
+  color: black;
+  font-style: inherit;
+  font-weight: bold;
+}
+
+@keyframes perspective {
+  0% {
+    opacity: 0;
+    transform: rotateY(-35deg);
+  }
+  26% {
+    transform: rotateX(45deg);
+  }
+  74% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateX(20deg);
+  }
+}

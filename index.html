@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif:ital@1&family=Prosto+One&family=Roboto:wght@300;400;700;900&family=Sevillana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>Weather-App</h2>
+
+    <div class="panel">
+      <form class="container">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter City..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+            id="myinput"
+          />
+
+          <button type="submit" class="btn btn-primary" id="mybtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+
+      <section class="box"></section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
